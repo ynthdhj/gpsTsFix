@@ -1,3 +1,5 @@
+由于美国人升级GPS人造卫星时间系统，导致仪器通过GPS对准时间以后，日期出错！
+
 全自动修改EVT的GPS时间出错。
 
 
@@ -60,4 +62,5 @@ crontab -r : 删除 crontab 文件。
 crontab -e
 
 * * * * * flock -xn /tmp/gpsTsFix.lock -c 'php /home/webapps/gpsTsFix/main.php > /dev/null'
+
 
